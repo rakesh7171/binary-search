@@ -1,0 +1,21 @@
+int search( vector<int>A,  int target) {
+    int low = 0;           // Start index 
+    int high = A.size() - 1;      // End index 
+
+    while (low <= high) {
+        int mid = low + (high - low) / 2;  // Calculate the middle index
+
+        if (A[mid] == target) {
+            return mid;  
+        } 
+        else if (A[mid] < target) {
+            low = mid + 1;  
+        } 
+        else {
+            high = mid - 1;  
+        }
+    }
+
+    return -1;  
+}
+
