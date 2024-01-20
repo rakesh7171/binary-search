@@ -1,0 +1,2 @@
+# binary-search
+coding ninja
